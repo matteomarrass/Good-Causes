@@ -1,0 +1,50 @@
+Hello, welcome another time in my GitHub, I'm proud to introduce you to my new project!
+
+* Overview
+
+This is my new project, it's about a charity, and its name (fantasy name) is Good Causes!
+It has numerous active projects in all over the world, from Asia to Africa to South America, and gives various services to people, starting from free food to even psychologists!
+
+* Palette colours
+
+I decided to use warm color, to indicate our warmness and hospitality that we deserve for the people.
+In this case, I choosed this palette (in order from darkest to lightest) :
+
+* B1B2FF
+* AAC4FF
+* D2DAFF
+* EEF1FF
+
+* Folder Subdivision
+
+-Good causes
+        |
+        |-- Javascript -- (.js files) 
+        |
+        |
+        |-- Libs --  React -- (.js files)
+        |        
+        |
+        |-- StyleSheets -- css -- (.css files)        
+        |       
+        |        
+        |-- Img -- (.jpeg, .jpg files)
+        |        
+        |
+        |-- Preview Pics -- (.jpeg, .jpg files)        
+        | 
+        |        
+        |-- index.html
+        |        
+        |
+        |-- readme.txt (me, your favourite file in all the project :D)
+
+* Purpose of the project
+
+This project has various purposes, the most important of them are:
+
+* Make practice for the first time with React and improve the old ones with Javascript 
+* Refresh my knowledge with HTML, CSS.
+* Test a bit of my little knowledge about UX Design!
+
+

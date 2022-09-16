@@ -1,0 +1,141 @@
+/* Universal Rules*/
+body {
+  margin: 0 auto;
+  background-color: #eef1ff;
+}
+
+h1 {
+  font-family: "GFS Neohellenic", sans-serif;
+  font-size: 4rem;
+}
+h2,
+p,
+input,
+figcaption {
+  font-family: "EB Garamond", serif;
+  color: #b1b2ff;
+}
+
+/*Logo*/
+
+#logo {
+  text-align: center;
+}
+
+#logo img {
+  width: 28%;
+  height: auto;
+  padding: 0rem;
+}
+
+/*Help Section + Donations*/
+#help {
+  padding: 3rem 1rem;
+  background-color: #ffff;
+}
+
+#help img {
+  width: 40%;
+  height: auto;
+  padding: 1.4rem;
+  border-radius: 2rem;
+  float: left;
+}
+
+#presentation {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  -webkit-text-stroke: 0.3px black;
+  margin-bottom: 1rem;
+}
+
+#form-donation {
+  text-align: center;
+}
+
+#form-donation form * {
+  padding: 0.2rem;
+  margin: 0.2rem 0rem;
+  font-size: 1.8rem;
+  border-radius: 0.2rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 3px solid #b1b2ff;
+}
+
+input#donation {
+  transition: 0.8s;
+}
+
+input#donation:hover {
+  color: #eef1ff;
+  background-color: #b1b2ff;
+}
+
+/*Interesting Projects*/
+#interesting-projects {
+  background-color: #b1b2ff;
+}
+
+#image-title-project {
+  width: 40%;
+  height: auto;
+  float: left;
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
+#project-title {
+  text-align: end;
+  padding: 10rem;
+  color: #ffff;
+}
+
+#project-list {
+  display: flex;
+  background-color: #b1b2ff;
+}
+
+#project-list figcaption {
+  color: #b1b2ff;
+  font-size: 1.6rem;
+}
+.project {
+  background-color: #eef1ff;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.project img {
+  width: 60%;
+  height: auto;
+  border-radius: 2.2rem;
+  padding: 1rem;
+  display: block;
+  margin: auto;
+}
+
+.project figcaption {
+  text-align: center;
+}
+
+/*Various Datas*/
+#data {
+  background-color: #eef1ff;
+  color: #b1b2ff;
+}
+
+#title-data {
+  text-align: center;
+}
+
+#chart {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: auto;
+}

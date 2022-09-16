@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Stylesheets/style.css" />
+    <title>Good Causes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=GFS+Neohellenic&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./node_modules/chart.js/dist/chart.js"></script>
+  </head>
+  <body>
+    <div id="logo"><img src="./Img/Logo Good Causes.png" alt="" /></div>
+    <!-- Help Section + Donations -->
+    <div id="help">
+      <img src="./Img/larm-rmah-AEaTUnvneik-unsplash.jpg" alt="" />
+      <p id="presentation">
+        Welcome to Good Causes! Help us create some projects to save and help
+        children from all over the world! Or if you can't please donate some
+        money!
+      </p>
+      <div id="form-donation">
+        <form action="./succesful donation.html">
+          <input type="text" id="name" placeholder="Name" /> <br />
+          <input type="text" id="surname" placeholder="Surname" /> <br />
+          <input type="text" name="email" id="email" placeholder="Email" />
+          <br />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+          />
+          <br />
+          <input
+            type="submit"
+            name="donation"
+            id="donation"
+            value="Donate! ♡"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!-- Interesting Projects  -->
+    <div id="interesting-projects">
+      <img
+        src="./Img/joel-muniz-XHT01BY-cGo-unsplash.jpg"
+        alt=""
+        id="image-title-project"
+      />
+      <h1 id="project-title">
+        We have projects in <br />
+        all the parts of the world. <br />
+        This are the most <br />
+        succesful ones!
+      </h1>
+      <div id="project-list">
+        <div class="project">
+          <img src="./Img/ben-white-83tkHLPgg2Q-unsplash.jpg" alt="" />
+          <figcaption>
+            We created schools in all the world, starting from India and Nepal,
+            then we expanded to Africa and the majority of countries of South
+            America! With 1$ a day we can guarantee a day of full instruction
+            for a child!
+          </figcaption>
+        </div>
+        <div class="project">
+          <img src="./Img/frank-mckenna-LhOjrOlcLx4-unsplash.jpg" alt="" />
+          <figcaption>
+            Thanks to the support of ERASMUS+ projecy, we can give an
+            international education to the children of the campus, they will
+            have the possibility to compete with other studentd and challenge
+            themselves!
+          </figcaption>
+        </div>
+        <div class="project">
+          <img src="./Img/francisco-venancio-M4Xloxsg0Gw-unsplash.jpg" alt="" />
+          <figcaption>
+            We were able to reconstruct the principal hospitals of all the West
+            Africa, now they have modern infrastuctures and qualified personnel.
+            It was a project that took over 1 billion dollars in donation!
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+    <!-- Various Datas -->
+
+    <section id="data">
+      <h1 id="title-data">Do you want to know how much it helps your money?</h1>
+      <div id="chart">
+        <canvas id="myChart" width="50" height="50"></canvas>
+        <script>
+          const ctx = document.getElementById("myChart");
+          const myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: ["2017", "2018", "2019", "2020", "2021", "20222"],
+              datasets: [
+                {
+                  label: "Recieved Donations (in M$)",
+                  data: [12, 19, 20, 18, 50, 124],
+                  backgroundColor: [
+                    "#b1b2ff",
+                    "#b1b2ff",
+                    "#b1b2ff",
+                    "#b1b2ff",
+                    "#b1b2ff",
+                    "#b1b2ff",
+                  ],
+                  borderColor: [
+                    "#eef1ff",
+                    "#eef1ff",
+                    "#eef1ff",
+                    "#eef1ff",
+                    "#eef1ff",
+                    "#eef1ff",
+                  ],
+                  borderWidth: 1,
+                },
+              ],
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true,
+                },
+              },
+            },
+          });
+        </script>
+      </div>
+    </section>
+  </body>
+</html>
