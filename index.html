@@ -94,48 +94,47 @@
 
     <section id="data">
       <h1 id="title-data">Do you want to know how much it helps your money?</h1>
-      <div id="chart">
-        <canvas id="myChart" width="50" height="50"></canvas>
-        <script>
-          const ctx = document.getElementById("myChart");
-          const myChart = new Chart(ctx, {
-            type: "bar",
-            data: {
-              labels: ["2017", "2018", "2019", "2020", "2021", "20222"],
-              datasets: [
-                {
-                  label: "Recieved Donations (in M$)",
-                  data: [12, 19, 20, 18, 50, 124],
-                  backgroundColor: [
-                    "#b1b2ff",
-                    "#b1b2ff",
-                    "#b1b2ff",
-                    "#b1b2ff",
-                    "#b1b2ff",
-                    "#b1b2ff",
-                  ],
-                  borderColor: [
-                    "#eef1ff",
-                    "#eef1ff",
-                    "#eef1ff",
-                    "#eef1ff",
-                    "#eef1ff",
-                    "#eef1ff",
-                  ],
-                  borderWidth: 1,
-                },
-              ],
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true,
-                },
-              },
-            },
-          });
-        </script>
+      <div id="all-charts">
+        <div id="chart">
+          <canvas id="myChart" width="20" height="20"></canvas>
+        </div>
+        <div id="chart2">
+          <canvas id="secondChart" width="20" height="20"></canvas>
+        </div>
+        <div>
+          <h2>Book that we donated</h2>
+          <h3 id="books"></h3>
+          <h2>Water that we provide every day</h2>
+          <h3 id="water"></h3>
+          <h2>Starving childrens saved</h2>
+          <h3 id="saved"></h3>
+        </div>
       </div>
     </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer">
+      <h1>
+        Do you want to become our volunteer? Try a interview with us, you can
+        become an ambassador of our mission!
+      </h1>
+      <input
+        type="submit"
+        name="donation"
+        id="volunteer-now"
+        value="Volunteer with us!"
+      />
+    </section>
+    <!-- Footer Section  -->
+    <footer>
+      <div>
+        <a href="#"><img src="Img/comment.png" alt="" /></a>
+        <a href=""><img src="Img/facebook.png" alt="" /></a>
+        <a href=""><img src="Img/instagram.png" alt="" /></a>
+        <a href=""><img src="Img/youtube.png" alt="" /></a>
+      </div>
+      <h2>Made With</h2>
+    </footer>
+    <script src="./Javascript/general.js"></script>
   </body>
 </html>

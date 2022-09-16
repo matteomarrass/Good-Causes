@@ -7,13 +7,19 @@ body {
 h1 {
   font-family: "GFS Neohellenic", sans-serif;
   font-size: 4rem;
+  color: #eef1ff;
 }
 h2,
+h3,
 p,
 input,
 figcaption {
   font-family: "EB Garamond", serif;
   color: #b1b2ff;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 /*Logo*/
@@ -66,7 +72,8 @@ input[type="text"]:focus {
   border: 3px solid #b1b2ff;
 }
 
-input#donation {
+input#donation,
+input#volunteer-now {
   transition: 0.8s;
 }
 
@@ -133,9 +140,64 @@ input#donation:hover {
   text-align: center;
 }
 
-#chart {
+#all-charts {
+  display: flex;
+  justify-content: space-around;
+}
+
+#all-charts h2 {
+  text-align: center;
+}
+
+#all-charts h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#chart,
+#chart2 {
   width: 30%;
   height: auto;
+  float: left;
+}
+
+/*Volunteer section */
+
+#volunteer {
+  background-color: #b1b2ff;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  padding: 2rem;
+}
+#volunteer-now {
   display: block;
-  margin: auto;
+  width: 40%;
+  height: auto;
+  padding: 0.2rem;
+  margin: 0.2rem 0rem;
+  font-size: 1.8rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  transition: 0.8s;
+}
+input#volunteer-now:hover {
+  color: #ffff;
+  background-color: #aac4ff;
+}
+#volunteer img {
+  width: 40%;
+  height: auto;
+  float: right;
+  border-radius: 50%;
+}
+
+/*Footer Section*/
+footer div {
+  padding: 2rem;
+}
+
+footer img {
+  width: 1.8%;
+  margin: 0.5rem;
+  height: auto;
 }
