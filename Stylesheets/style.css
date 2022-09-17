@@ -177,7 +177,7 @@ input#donation:hover {
   margin: 0.2rem 0rem;
   font-size: 1.8rem;
   border-radius: 0.2rem;
-  text-align: center;
+  margin: auto;
   transition: 0.8s;
 }
 input#volunteer-now:hover {
@@ -192,8 +192,10 @@ input#volunteer-now:hover {
 }
 
 /*Footer Section*/
-footer div {
-  padding: 2rem;
+#contact,
+footer p {
+  text-align: center;
+  padding: 1rem;
 }
 
 footer img {
